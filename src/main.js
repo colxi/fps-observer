@@ -8,7 +8,7 @@
  *               the averaged FPS value.
  */
 
-function fpsObserver(autoObserve){
+window.fpsObserver = function fpsObserver(autoObserve){
     'use strict';
 
     if( !new.target ) return new fpsObserver(autoObserve);
@@ -172,4 +172,3 @@ function fpsObserver(autoObserve){
     return FPS;
 }
 
-window.fpsObserver = fpsObserver;
