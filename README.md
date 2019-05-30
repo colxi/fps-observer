@@ -1,8 +1,13 @@
 # fpsObserver (fps-observer) : JS Framerate monitoring 
 
-This simple **crossbrowser** library helps you to monitor the window global **framerate**, or your individual animation loops framerates. It also returns a stabilized FPS value (averaged) by involving multiple samples (configurable ammount), with **accurate values**, based in calculations from timestamps obtained using `performance.now()`.
+This simple **crossbrowser** library helps you to monitor the window global **framerate**, or your individual animation loops framerates. Each instance of the observer returns an object containing some useful methods, and a stabilized (averaged) FPS value obtained by involving multiple samples (configurable ammount), with **accurate values**, based in calculations from timestamps from the accurate `performance.now()`.
 
-Usage example ( **Automatic mode** ): 
+See an example  **visual FPS graph** in action [here](http://colxi.info/fps-observer/test/)
+
+> Note: This library does not provide any GUI element for FPS visualization, but an Object instead with all the framerate information.
+
+## Usage examples 
+**Automatic mode :** 
 ```javascript
 import {fpsObserver} from './fps-observer.is';
 
@@ -20,7 +25,7 @@ myLoop();
 ```
 
 
-Usage example ( **Manual mode** ): 
+**Manual mode :** 
 ```javascript
 import {fpsObserver} from './fps-observer.is';
 
