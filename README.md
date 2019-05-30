@@ -47,7 +47,7 @@ myLoop();
 ## Constructor Syntax :
 
 ```javascript
-new fpsObserver( autoMode:boolean ); 
+new fpsObserver( autoMode ); 
 ```
 Parameters : 
 - **autoMode** : Boolean to set the status of the automatic mode ( default : true )
@@ -88,3 +88,4 @@ $ git clone https://github.com/colxi/fps-observer
 <script src="https://colxi.info/fps-observer/src/main.js"></script>
 ```
 
+> Note : When included in the HTML `head`, the fpsObserver constructor becomes available as `window.fpsObserver`
