@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fps-observer test</title>
+    </head>
+    <body>
+        FPS : <span id="currentFPS"></span>
+        <script type="module">
+            import {fpsObserver} from '../src/fps-observer.js'
+            
+            
+            let myObserver = new fpsObserver();
+            let currentFPS = document.getElementById('currentFPS');
+            
+            function myLoop(){
+                currentFPS.innerHTML = myObserver.value + ' fps';
+                requestAnimationFrame( myLoop );
+            }
+            requestAnimationFrame( myLoop );
+        </script>
+    </body>
+</html>

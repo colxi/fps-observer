@@ -1,0 +1,24 @@
+{
+  "name": "fps-observer",
+  "version": "1.0.0",
+  "homepage": "https://github.com/colxi/fps-observer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colxi/fps-observer.git"
+  },
+  "keywords": [
+    "fps observer",
+    "framerate observer",
+    "fps monitor",
+    "fps viewer",
+    "stabilized fps",
+    "average fps"
+  ],
+  "description": "Observe easily the FPS (framerates) of your animations loops.",
+  "main": "./src/fps-observer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "colxi",
+  "license": "MIT"
+}
